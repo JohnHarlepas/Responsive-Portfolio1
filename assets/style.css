@@ -1,0 +1,267 @@
+body {
+    color: rgb(80, 80, 80);
+    font-size: 14px;
+    line-height: 33px;
+    background: url("images/grayBackground.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .section1 {
+
+    margin: 0 auto;
+    clear: both;
+    max-width: 960px;
+    width: 100%;
+
+  }
+
+
+
+
+
+  .surround {
+    height: auto !important;
+    height: 100%;
+  
+    /* Box-model */
+    min-height: 100%;
+  
+    /* Positioning */
+    margin: 0 auto -80px;
+  }
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 10px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+  }
+
+h1,
+h2,
+h3 {
+  color: #41e9e1;
+  font-weight: 550;
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+h1 {
+    line-height: 59px;
+    font-size: 35px;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 20px;
+  }
+
+h2,
+h3 {
+  font-size: 30px;
+}
+
+#firstBox {
+    position: sticky;
+    /* There are two ways you can force element to stay in place as you scroll: 1) position: fix and 2) position: sticky. The latter is new and it works 100% of time. */
+    border-bottom: 2px solid rgb(167, 167, 167);
+    background: rgb(255, 255, 255);
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    color: rgb(255, 255, 255);
+    z-index: 55;
+  
+    
+
+  }
+
+  #smallPic {
+
+    text-decoration: none;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 31px;
+    font-weight: 550;
+    line-height: 90px;
+    color: rgb(247, 247, 247);
+    text-align: center;
+    float: left;
+    background: #48c2bc;
+    width: 250px;
+    height: 90px;
+
+
+  }
+
+  nav {
+    float: right;
+    margin-top: 33px;
+  }
+
+  nav a {
+    display: inline-block;
+    padding-left: 15px;
+    color: rgb(140, 140, 140);
+    border-left: 1px solid #fffefe;
+    margin-left: 15px;
+    line-height: 18px;
+    text-decoration: none;
+  }
+
+  nav a:first-child {
+    border-left: 0 none;
+  }
+
+  /* footer */
+
+footer {
+
+    padding: 30px 0;
+    text-align: center;
+    background: rgb(82, 82, 82);
+    color: rgb(242, 242, 242);
+    color: rgb(216, 215, 215);
+    border-top: 8px solid #4da49f;
+    height: 50px;
+    clear: both;
+    font-size: 14px;
+
+  }
+  
+  h3, h2 {
+  
+    line-height: 18px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 21px;
+    margin-bottom: 15px;
+  }
+
+  /* main */
+
+  #secondBox {
+    padding-top: 145px;
+    min-height: calc(95vh - 55px);
+  }
+
+  .secondBox {
+    padding: 38px;
+    margin: 0 0 40px;
+    max-width: 960px;
+    background: rgb(247, 247, 247);
+    border: 1px solid rgb(216, 216, 216);
+    float: left;
+    width: 100%;
+  }
+
+  .picMe {
+    margin-right: 23px;
+    height: auto;
+    margin-top: 10px;
+    float: left;
+    width: 195px;
+  }
+
+/* contact page */
+
+  #inputForm ul {
+    margin-bottom: 18px;
+  }
+  
+  #inputForm li {
+    margin-bottom: 7px;
+  }
+  
+  label,
+  input[type=email],
+  input[type=text],
+  textarea {
+    display: block;
+    width: 100%;
+  }
+  
+  input[type=text],
+  input[type=email],
+  textarea {
+
+    font-size: 25px;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid rgb(232, 232, 232);
+  }
+  
+  textarea {
+    height: 250px;
+  }
+  
+  input[type=submit] {
+    background: #399692;
+    border: 0 none;
+    color: rgb(232, 232, 232);
+    cursor: pointer;
+    padding: 10px 30px;
+    font-size: 22px;
+  }
+  
+  /* portfolio page */
+
+.project {
+  overflow: auto;
+  width: 300px;
+  margin: 20px 0 25px;
+  position: relative;
+  float: left;
+}
+
+.project:nth-child(even) {
+  margin-right: 40px;
+}
+
+.project img {
+  border: 0 none;
+  opacity: 0.65;
+  width: 100%;
+  
+}
+
+.project h3 {
+  text-align: center;
+  background: #41e9e1;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  border-bottom: 0;
+  position: absolute;
+  bottom: 20px;
+}
+
+@media only screen and (max-width: 980px) {
+  .firstBox, 
+  .secondBox{
+    position: static;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .firstBox,
+  .secondBox{
+    position: static;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .firstBox,
+  .secondBox{
+    position: static;
+    max-width: 100%;
+  }
+}
